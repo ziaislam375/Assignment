@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SwiftCar</title>
+
+    <!-- DaisyUI -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.4.24/dist/full.min.css" rel="stylesheet" type="text/css" />
+
+    <!-- Tailwind -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- font-awesome  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+    <!-- google font  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <!-- NAVBAR START -->
+    <div class="bg-base-200 w-full shadow-sm">
+        <div class="navbar max-w-7xl mx-auto px-4  w-11/12  ">
+
+            <!-- LEFT: Logo -->
+            <div class="navbar-start">
+                <a class="text-xl font-bold normal-case">SwiftCart</a>
+            </div>
+
+            <!-- CENTER: Menu Items (Desktop Only) -->
+            <div class="navbar-center hidden lg:flex">
+                <ul class="menu menu-horizontal px-1">
+                    <li><a>Home</a></li>
+                    <li><a href="products.html" target="_blank">Products</a>
+                    </li>
+                    <li><a>About</a></li>
+                    <li><a>Contact</a></li>
+                </ul>
+            </div>
+
+            <!-- RIGHT: Cart + Hamburger -->
+            <div class="navbar-end flex items-center gap-4 ">
+
+                <!-- Mobile: Hamburger -->
+                <div class="lg:hidden dropdown">
+                    <label tabindex="0" class="btn btn-ghost">
+                        <i class="fa-solid fa-bars text-xl"></i>
+                    </label>
+                    <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52">
+                        <li><a>Home</a></li>
+                        <li><a>Products</a></li>
+                        <li><a>About</a></li>
+                        <li><a>Contact</a></li>
+                    </ul>
+                </div>
+
+                <!-- Cart Icon -->
+
+
+                <i class="fa-solid fa-cart-shopping text-xl"></i>
+
+            </div>
+        </div>
+    </div>
+    <!-- NAVBAR END -->
+
+
+    <!-- HERO -->
+    <div class="hero min-h-[400px]" style="background-image: url('/Assets/banner-image.png');">
+        <div class="hero-overlay bg-opacity-60"></div>
+        <div class="hero-content text-start text-neutral-content">
+            <div>
+                <h1 class="mb-5 text-5xl font-bold">Best Collection For You</h1>
+                <p class="mb-5">Discover the latest trendis in tashion, electronlcs, and more. shop with confidence and
+                    style at swiftcart.</p>
+                <button class="btn btn-primary">Shop Now</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- card sec. start -->
+    <!-- card-hedding  -->
+    <div class="card-hed text-center space-y-4 p-10">
+        <h1 class="text-3xl font-bold">Why Choose Us</h1>
+        <p class="text-gray-400 font-medium">We provide the best shopping experience with top-notch serives.</p>
+    </div>
+    <section class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 p-5 mt-6">
+
+        <!-- Card 1 -->
+        <div class="card bg-base-100 shadow-sm w-full relative">
+
+            <!-- Icon Button -->
+            <button class="btn btn-primary btn-sm absolute top-[-8px] left-[30px] btn-md ">
+                <i class="fa-solid fa-truck-moving text-xl"></i>
+            </button>
+
+            <div class="card-body pt-16">
+                <h2 class="card-title">Fast Delivery</h2>
+                <p class="text-gray-400 text-left">Get your orders to your doorstep quickly and efficiently.</p>
+            </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="card bg-base-100 shadow-sm w-full relative">
+            <!-- Icon Button -->
+            <button class="btn btn-secondary btn-sm absolute top-[-8px] left-[30px] btn-md ">
+                <i class="fa-solid fa-headset text-2xl"></i>
+            </button>
+
+            <div class="card-body pt-16">
+                <h2 class="card-title">24/7 Support</h2>
+                <p class="text-gray-400 text-left">Our support team is available around the clock to assist you.</p>
+            </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="card bg-base-100 shadow-sm w-full relative">
+
+            <button class="btn btn-accent btn-sm absolute top-[-8px] left-[30px] btn-md ">
+                <i class="fa-solid fa-bangladeshi-taka-sign text-3xl"></i>
+            </button>
+
+            <div class="card-body pt-16">
+                <h2 class="card-title">secure Payment</h2>
+                <p class="text-gray-400 text-left">Experience safe and secure tramsactions with our encrypted payment
+                    systems.</p>
+            </div>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="card bg-base-100 shadow-mds w-full relative ">
+
+            <button class="btn btn-info btn-md absolute top-0 left-[30px] shadow-lg">
+                <i class="fa-solid fa-arrow-rotate-left text-3xl"></i>
+            </button>
+
+            <div class="card-body pt-16">
+                <h2 class="card-title">Easy Returns</h2>
+                <p class="text-gray-400 text-left">Not satisfied? return your products easily within 30 days.</p>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- Trending sec start   -->
+
+    <section class="w-11/12 mx-auto mt-9">
+        <h1 class="text-center text-4xl font-bold mb-12">Trending New</h1>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+
+            <!-- Card 1 -->
+            <div class="card bg-base-100 w-full shadow-sm">
+                <figure class="h-64 overflow-hidden">
+                    <img src="Assets/back-1.jpg" alt="Shoes" class="w-full h-full object-cover" />
+                </figure>
+                <div class="card-body">
+                    <div class="flex justify-between items-center">
+                        <p class="font-bold">Men's Clothing</p>
+                        <div class="flex items-center gap-2">
+                            <i class="fa-solid fa-star text-yellow-400"></i>
+                            <span>3.9 (120)</span>
+                        </div>
+                    </div>
+
+                    <p class="mt-2">Fjalleaven foldsack No. 1 Backpack,....</p>
+                    <p class="font-bold">$109.95</p>
+
+                    <div class="card-actions mt-4 flex gap-[10px]">
+                        <button class="btn btn-outline btn-sm flex-1"><i class="fa-regular fa-eye"></i> Details</button>
+                        <button class="btn btn-outline btn-sm flex-1"><i class="fa-solid fa-cart-shopping"></i>
+                            Add</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="card bg-base-100 w-full shadow-sm">
+                <figure class="h-64 overflow-hidden">
+                    <img src="Assets/t-shart.jpg" alt="Shoes" class="w-full h-full object-cover" />
+                </figure>
+                <div class="card-body">
+                    <div class="flex justify-between items-center">
+                        <p class="font-bold">Women's Clothing</p>
+                        <div class="flex items-center gap-2">
+                            <i class="fa-solid fa-star text-yellow-400"></i>
+                            <span>4.2 (85)</span>
+                        </div>
+                    </div>
+
+                    <p class="mt-2">Mens Casual Premium slim fit t shirts.</p>
+                    <p class="font-bold">$79.95</p>
+
+                    <div class="card-actions mt-4 flex gap-[10px]">
+                        <button class="btn btn-outline btn-sm flex-1"><i class="fa-regular fa-eye"></i> Details</button>
+                        <button class="btn btn-outline btn-sm flex-1"><i class="fa-solid fa-cart-shopping"></i>
+                            Add</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="card bg-base-100 w-full shadow-sm">
+                <figure class="h-64 overflow-hidden">
+                    <img src="Assets/jacket.jpg" alt="Shoes" class="w-full h-full object-cover" />
+                </figure>
+                <div class="card-body">
+                    <div class="flex justify-between items-center">
+                        <p class="font-bold">Accessories</p>
+                        <div class="flex items-center gap-2">
+                            <i class="fa-solid fa-star text-yellow-400"></i>
+                            <span>4.0 (60)</span>
+                        </div>
+                    </div>
+
+                    <p class="mt-2">Mens cotton Jacket.</p>
+                    <p class="font-bold">$49.95</p>
+
+                    <div class="card-actions mt-4 flex gap-[10px]">
+                        <button class="btn btn-outline btn-sm flex-1"><i class="fa-regular fa-eye"></i> Details</button>
+                        <button class="btn btn-outline btn-sm flex-1"><i class="fa-solid fa-cart-shopping"></i>
+                            Add</button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+
+    <!-- FOOTER -->
+
+    <!-- Main Footer -->
+    <footer class="footer p-10 bg-base-200 text-base-content mt-10">
+        <!-- SwiftCart Info -->
+        <div>
+            <span class="footer-title text-2xl font-bold">SwiftCart</span>
+            <p class="max-w-xs mt-2">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae, ipsam officiis ex odit distinctio
+                maiores
+                illo quibusdam ab voluptate eius tempora fugit, ea cum vel.
+            </p>
+        </div>
+
+        <!-- Quick Links -->
+        <div>
+            <span class="footer-title">Quick Links</span>
+            <a href="#" class="link link-hover">Home</a>
+            <a href="#" class="link link-hover">Products</a>
+            <a href="#" class="link link-hover">About</a>
+            <a href="#" class="link link-hover">Contact</a>
+        </div>
+
+        <!-- Support Links -->
+        <div>
+            <span class="footer-title">Support</span>
+            <a href="#" class="link link-hover">FAQ</a>
+            <a href="#" class="link link-hover">Shipping</a>
+            <a href="#" class="link link-hover">Returns</a>
+            <a href="#" class="link link-hover">Privacy Policy</a>
+        </div>
+
+        <!-- Newsletter -->
+        <div>
+            <span class="footer-title">Newsletter</span>
+            <div class="form-control w-80">
+                <label class="label">
+                    <span class="label-text">Enter your email address</span>
+                </label>
+                <div class="relative">
+                    <input type="email" placeholder="username@site.com" class="input input-bordered w-full pr-24" />
+                    <button class="btn btn-primary absolute top-0 right-0 rounded-l-none">Subscribe</button>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bottom Footer -->
+    <footer class="footer px-10 py-4 border-t bg-base-200 text-base-content border-base-300">
+        <div class="items-center grid-flow-col">
+            <p>© 2026 SwiftCart. All rights reserved.</p>
+        </div>
+        <div class="md:place-self-center md:justify-self-end">
+            <div class="grid grid-flow-col gap-4 text-xl">
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
